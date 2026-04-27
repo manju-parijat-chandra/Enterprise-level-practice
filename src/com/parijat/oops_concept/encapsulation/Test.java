@@ -13,5 +13,24 @@ public class Test {
         // speed is protected -> can access in same package
         // But Can also access if child in Other Package -> Extra Benifit From Default
         System.out.println(obj.speed);
+
+
+
+        // Proper Encapsulation is achieved in Dog class
+
+        Dog kalu = new Dog("Kalu", 10);
+
+        // No Direct access of Instance Variable
+        // kalu.name;
+
+        // Accessed via Getters and Setters
+
+        System.out.printf("%s's name and age : %d is registered successfully",kalu.getName(), kalu.getAge());
+
+        kalu.increaseAge(2);
+
+        System.out.println();
+
+        System.out.printf("New Age of %s is %d",kalu.getName(),kalu.getAge());
     }
 }
