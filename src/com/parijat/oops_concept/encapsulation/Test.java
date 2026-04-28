@@ -32,5 +32,10 @@ public class Test {
         System.out.println();
 
         System.out.printf("New Age of %s is %d",kalu.getName(),kalu.getAge());
+
+        System.out.println();
+        // With Missing value
+        Dog lalu = new Dog("Lalu");
+        System.out.printf("%s's name and age : %d is registered successfully",lalu.getName(), lalu.getAge());
     }
 }
