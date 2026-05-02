@@ -22,4 +22,9 @@ public class ImplementClass implements Utility, As_interface{
     public void mul() {
 
     }
+
+    public void classname(){
+        System.out.println("implement child class");
+    }
+
 }

@@ -23,7 +23,15 @@ public interface Utility {
     }
 
     // Can have Default methods onluy  -> Regular methods (with body) Not allowed
+
+    void classname();
+
+    // With this -> No need to write this method in all class
+    // Abstract method (classname) -> called via default for each instance.
+    // no need to sum method in each class
+
     default int sum(int a, int b){
+        this.classname(); // Dependent on Instance.
         return a+b;
     }
 
