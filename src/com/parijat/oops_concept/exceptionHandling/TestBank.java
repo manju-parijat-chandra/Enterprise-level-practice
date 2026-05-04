@@ -10,6 +10,8 @@ public class TestBank {
         }catch (IllegalArgumentException e){
             System.out.println(e);
         }
+        System.out.println(account1); // Prints address where actual object is stored
+        // account1 is a reference variable of type BANK.
 
         account1.depositeAmount(100);
 
