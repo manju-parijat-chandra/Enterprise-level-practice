@@ -1,4 +1,4 @@
-package com.parijat.oops_concept.abstraction;
+package com.parijat.oops_concept.oopsPillars.abstraction;
 // Hiding Internal Details
 // We can't Create Object (Instance) of an astract class.
 // -> Since Abstract methods doesn't have body and without body it is of no use. (Makes no sense)

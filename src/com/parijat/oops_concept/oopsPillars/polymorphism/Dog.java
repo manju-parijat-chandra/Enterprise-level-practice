@@ -1,4 +1,4 @@
-package com.parijat.oops_concept.polymorphism;
+package com.parijat.oops_concept.oopsPillars.polymorphism;
 
 public class Dog extends Animal{
 

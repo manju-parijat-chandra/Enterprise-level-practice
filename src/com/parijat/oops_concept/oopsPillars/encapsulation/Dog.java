@@ -1,4 +1,4 @@
-package com.parijat.oops_concept.encapsulation;
+package com.parijat.oops_concept.oopsPillars.encapsulation;
 
 public class Dog {
 

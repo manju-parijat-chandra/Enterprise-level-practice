@@ -1,0 +1,12 @@
+package com.parijat.oops_concept.multiThreading;
+
+// Method 1 -> by Extending Thread Class
+
+public class World extends Thread{
+    @Override
+    public void run(){
+        for (int i = 0; i < 100000; i ++ ){
+            System.out.println("Worldddddddd");
+        }
+    }
+}

@@ -1,4 +1,4 @@
-package com.parijat.oops_concept.inheritance;
+package com.parijat.oops_concept.oopsPillars.inheritance;
 
 // Inheritance is Achieved by extending other class.
 public class Animal extends Living_Organism{

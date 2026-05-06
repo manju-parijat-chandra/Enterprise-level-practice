@@ -1,4 +1,4 @@
-package com.parijat.oops_concept.inheritance;
+package com.parijat.oops_concept.oopsPillars.inheritance;
 
 // Multi-Level Inheritance is Achieved
 // Grand-Parent -> Parent -> Child

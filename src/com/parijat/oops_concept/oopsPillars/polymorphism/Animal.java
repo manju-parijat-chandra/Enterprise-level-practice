@@ -1,4 +1,4 @@
-package com.parijat.oops_concept.polymorphism;
+package com.parijat.oops_concept.oopsPillars.polymorphism;
 
 // Compile Time Polymorphism -> Achieved by Method OverLoading
 // Run Time Polymorphism -> Achieved by Method Overriding

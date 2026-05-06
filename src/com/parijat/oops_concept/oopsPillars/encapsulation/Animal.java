@@ -1,4 +1,4 @@
-package com.parijat.oops_concept.encapsulation;
+package com.parijat.oops_concept.oopsPillars.encapsulation;
 
 // How to Achieve Encapsulation  (Data Hiding -> Preventing Direct access)
 // 1 -> Set Instance Variable as Private

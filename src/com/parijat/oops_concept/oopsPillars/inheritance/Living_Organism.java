@@ -1,4 +1,4 @@
-package com.parijat.oops_concept.inheritance;
+package com.parijat.oops_concept.oopsPillars.inheritance;
 
 public class Living_Organism {
     // Generalized Class.

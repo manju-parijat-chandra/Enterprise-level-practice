@@ -1,6 +1,6 @@
 package com.parijat.oops_concept.test;
 
-import com.parijat.oops_concept.encapsulation.Animal;
+import com.parijat.oops_concept.oopsPillars.encapsulation.Animal;
 
 public class Test {
     public static void main(String[] args){
