@@ -24,8 +24,13 @@ public class BankAccount {
                         balance -= amount;
                         System.out.println(Thread.currentThread().getName() + " has Withdrawn " + amount);
                     }catch (InterruptedException e){
-
+                        Thread.currentThread().interrupt(); // Good Practice to let other threads know as it was interrupted
                     }finally {
+
+                        if(Thread.currentThread().isInterrupted()){
+                            System.out.println(Thread.currentThread().getName() + " Was Interrupted");
+                        }
+
                         lock.unlock(); // Leave the key outside so that other can use the room (resource)
                     }
                 }else {
@@ -35,8 +40,10 @@ public class BankAccount {
                 System.out.println(Thread.currentThread().getName() + " couldn't acquire the lock, will try later");
             }
         } catch (InterruptedException e) {
-            throw new RuntimeException(e);
+            Thread.currentThread().interrupt(); // good Practice as it tells Other thread that this thread was interrupted
         }
-
+        if(Thread.currentThread().isInterrupted()){
+            System.out.println(Thread.currentThread().getName() + " Was Interrupted");
+        }
     }
 }
