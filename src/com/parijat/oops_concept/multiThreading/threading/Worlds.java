@@ -1,4 +1,4 @@
-package com.parijat.oops_concept.multiThreading;
+package com.parijat.oops_concept.multiThreading.threading;
 
 // Method 2 -> By Implementing Runnable Interface
 

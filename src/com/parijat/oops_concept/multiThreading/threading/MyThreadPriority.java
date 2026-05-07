@@ -1,4 +1,4 @@
-package com.parijat.oops_concept.multiThreading;
+package com.parijat.oops_concept.multiThreading.threading;
 
 public class MyThreadPriority extends Thread {
 

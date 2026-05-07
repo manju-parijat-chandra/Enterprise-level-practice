@@ -1,4 +1,4 @@
-package com.parijat.oops_concept.multiThreading;
+package com.parijat.oops_concept.multiThreading.threading;
 
 // Method 1 -> by Extending Thread Class
 

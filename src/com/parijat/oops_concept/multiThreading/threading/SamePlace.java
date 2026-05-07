@@ -1,4 +1,4 @@
-package com.parijat.oops_concept.multiThreading;
+package com.parijat.oops_concept.multiThreading.threading;
 
 // Main Thread and other Thread in same class
 
