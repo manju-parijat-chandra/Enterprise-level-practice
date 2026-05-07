@@ -8,12 +8,16 @@ public class BankAccount {
     // All thread is sharing same resource and updating simultaneously
 
     public synchronized void withdrawMoney(int amount){
+
+        System.out.println(Thread.currentThread().getName() + " is Attempting to Withdraw " + amount + " from " +balance);
         if(amount <= balance){
+
             try {
                 Thread.sleep(1);
-            }catch (Exception e){
-
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
             }
+
             balance -= amount;
             System.out.println(Thread.currentThread().getName() + " Has Withdrawn " + amount);
         }else {

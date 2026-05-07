@@ -29,18 +29,28 @@ public class Test {
         // ****** Race Condition ******
         // Without synchronization -> all thread withdrawn 250 in total even though we had only 100 bucks
 
-//        Thread 2 Has Withdrawn 50
-//        Thread 1 Has Withdrawn 50
-//        Thread 5 Has Withdrawn 50
-//        Thread 4 Has Withdrawn 50
+//        Thread 3 is Attempting to Withdraw 50 from 100
+//        Thread 5 is Attempting to Withdraw 50 from 100
+//        Thread 2 is Attempting to Withdraw 50 from 100
+//        Thread 1 is Attempting to Withdraw 50 from 100
+//        Thread 4 is Attempting to Withdraw 50 from 100
 //        Thread 3 Has Withdrawn 50
+//        Thread 4 Has Withdrawn 50
+//        Thread 5 Has Withdrawn 50
+//        Thread 1 Has Withdrawn 50
+//        Thread 2 Has Withdrawn 50
 
         // Solution is ** Synchronisation ** of Critical Section
 
+//        Thread 1 is Attempting to Withdraw 50 from 100
 //        Thread 1 Has Withdrawn 50
+//        Thread 5 is Attempting to Withdraw 50 from 50
 //        Thread 5 Has Withdrawn 50
+//        Thread 4 is Attempting to Withdraw 50 from 0
 //        Sorry Thread 4 has no money to withdraw
+//        Thread 3 is Attempting to Withdraw 50 from 0
 //        Sorry Thread 3 has no money to withdraw
+//        Thread 2 is Attempting to Withdraw 50 from 0
 //        Sorry Thread 2 has no money to withdraw
 
         // Only Two thread is able to withdraw the money. -> Correctly executed
