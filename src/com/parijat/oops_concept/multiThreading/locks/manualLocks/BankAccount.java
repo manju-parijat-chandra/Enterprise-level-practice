@@ -24,6 +24,8 @@ public class BankAccount {
                         balance -= amount;
                         System.out.println(Thread.currentThread().getName() + " has Withdrawn " + amount);
                     }catch (InterruptedException e){
+                        // Manually restoring the state of Thread that was intruded
+                        // If not that would have lost this info that this particular thread was interrupted
                         Thread.currentThread().interrupt(); // Good Practice to let other threads know as it was interrupted
                     }finally {
 
@@ -40,9 +42,15 @@ public class BankAccount {
                 System.out.println(Thread.currentThread().getName() + " couldn't acquire the lock, will try later");
             }
         } catch (InterruptedException e) {
+            // ****************************** IMP *************************
+            // Manually restoring the state of Thread that was intruded
+            // If not that would have lost this info that this particular thread was interrupted
             Thread.currentThread().interrupt(); // good Practice as it tells Other thread that this thread was interrupted
         }
         if(Thread.currentThread().isInterrupted()){
+
+            // Cleanup code or maintenance Code can now run on interrupted thread
+
             System.out.println(Thread.currentThread().getName() + " Was Interrupted");
         }
     }
