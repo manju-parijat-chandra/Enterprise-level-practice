@@ -9,7 +9,7 @@ public class BankAccount {
 
     public synchronized void withdrawMoney(int amount){
 
-        System.out.println(Thread.currentThread().getName() + " is Attempting to Withdraw " + amount + " from " +balance);
+        System.out.println(Thread.currentThread().getName() + " is Attempting to Withdraw " + amount + " from " + balance);
         if(amount <= balance){
 
             try {
