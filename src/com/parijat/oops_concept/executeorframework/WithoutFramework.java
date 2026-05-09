@@ -1,6 +1,9 @@
 package com.parijat.oops_concept.executeorframework;
 
-public class Main {
+// Creation and Assignment to work of threads are still done by us
+// solved by Executor Framework
+
+public class WithoutFramework {
     public static void main(String[] args) {
 
         // Standard millisecond time

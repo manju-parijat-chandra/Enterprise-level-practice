@@ -5,6 +5,9 @@ public class Test {
 
         BankAccount acc = new BankAccount();
 
+        // Separate Class
+        Runnable taskSep = new WithdrawTask(acc);
+
         // Create anonymous class of Runnable Interface
         Runnable task = new Runnable() {
             @Override
@@ -13,7 +16,7 @@ public class Test {
             }
         };
 
-        Thread t1 = new Thread(task,"Thread 1");
+        Thread t1 = new Thread(taskSep,"Thread 1");
         Thread t2 = new Thread(task,"Thread 2");
         Thread t3 = new Thread(task,"Thread 3");
         Thread t4 = new Thread(task,"Thread 4");
