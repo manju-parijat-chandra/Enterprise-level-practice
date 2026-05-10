@@ -1,8 +1,8 @@
-package com.parijat.oops_concept.executeorframework.methodsOfFuture;
+package com.parijat.oops_concept.executeorframework.applyFramework;
 
 import java.util.concurrent.*;
 
-public class InvokeAllTask {
+public class PlayWithFuture {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         ExecutorService service = Executors.newSingleThreadExecutor();
 

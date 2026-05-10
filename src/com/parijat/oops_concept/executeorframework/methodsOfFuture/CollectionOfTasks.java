@@ -1,4 +1,6 @@
-package com.parijat.oops_concept.executeorframework.applyFramework;
+package com.parijat.oops_concept.executeorframework.methodsOfFuture;
+
+// Invoke All
 
 import java.util.Arrays;
 import java.util.List;
