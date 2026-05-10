@@ -2,7 +2,7 @@ package com.parijat.oops_concept.executeorframework.methodsOfFuture;
 
 import java.util.concurrent.*;
 
-public class PlayWithFuture {
+public class InvokeAllTask {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         ExecutorService service = Executors.newSingleThreadExecutor();
 
