@@ -1,6 +1,5 @@
-package com.parijat.oops_concept.executeorframework;
+package com.parijat.oops_concept.executeorframework.applyFramework;
 
-import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;

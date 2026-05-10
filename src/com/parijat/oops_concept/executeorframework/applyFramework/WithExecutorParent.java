@@ -1,4 +1,4 @@
-package com.parijat.oops_concept.executeorframework;
+package com.parijat.oops_concept.executeorframework.applyFramework;
 
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;

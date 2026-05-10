@@ -1,4 +1,4 @@
-package com.parijat.oops_concept.executeorframework;
+package com.parijat.oops_concept.executeorframework.applyFramework;
 
 // Creation and Assignment to work of threads are still done by us
 // solved by Executor Framework
