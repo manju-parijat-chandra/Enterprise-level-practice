@@ -34,7 +34,12 @@ public class UsingExecutorService {
 
         latch.await(); // UsingExecutorService method waits until Every execution if completed
 
+        // latch.await(5000,TimeUnit.MILLISECONDS);
+
         System.out.println("UsingExecutorService Started");
+
+        // service.shutdownNow() -> Doesn't matter if the thread was still running in background.
+        // It will be stopped
         service.shutdown();
 
 
