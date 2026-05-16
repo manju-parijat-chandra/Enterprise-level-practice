@@ -35,7 +35,7 @@ public class WithExecutorFramework {
         // Orderly Shutdown started
         // Can't Submit anything anymore
 
-        // ** Main thread doesn't wait for Shutdown to finish
+        // ** UsingExecutorService thread doesn't wait for Shutdown to finish
 
         // *********** Limited wait *************
         // Pause main for fixed Time -> if Work is done then Ok otherwise Move Ahead
