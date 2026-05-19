@@ -28,6 +28,11 @@ public class TypesOfGenericMethods {
         return number;
     }
 
+    // Multiple parameters
+    public <K extends String, V extends Number> String keyValue(K key, V value){
+        return (key + " : " + value);
+    }
+
     public static void main(String[] args) {
         TypesOfGenericMethods obj = new TypesOfGenericMethods();
 
@@ -41,6 +46,11 @@ public class TypesOfGenericMethods {
         printSomething("hellooo");
 
         System.out.println(obj.getNumber(1000));
+
+        String age = obj.keyValue("Age", 20);
+        String weight = obj.keyValue("Weight", 75.2);
+
+        System.out.println(age + " " + weight);
 
 
     }
