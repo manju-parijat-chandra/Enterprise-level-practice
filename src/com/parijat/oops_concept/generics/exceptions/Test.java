@@ -1,5 +1,10 @@
 package com.parijat.oops_concept.generics.exceptions;
 
+// **** We can't write this way as Generic is not Understood By JVM
+// And Exception is Thrown at Run-Time
+
+// class GenericException <T> extends Exception{}
+
 // This is how we Write Customized Exception
 // But we need to write multiple classes, So we Write Generic Exception Class.
 
