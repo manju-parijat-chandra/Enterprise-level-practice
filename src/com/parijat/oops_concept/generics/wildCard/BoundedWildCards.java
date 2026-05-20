@@ -54,6 +54,6 @@ public class BoundedWildCards {
         // You cannot safely add an Integer to a list of Double, so the compiler blocks it completely
 
         List<? super Integer> upperBounds = Arrays.asList(1,2,3,4); // some unknown type that is a parent of Integer.
-        upperBounds.add(0);
+        upperBounds.add(0); // Integer can be added -> Lower Bound is known, and it is type safe to add Integer
     }
 }
