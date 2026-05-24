@@ -7,7 +7,7 @@ import java.util.Set;
 public class implementationClass {
 
     public static void main(String[] args) {
-        HashMap<Integer, String> student = new HashMap<>();
+        HashMap<Integer, String> student = new HashMap<>(17,0.5f);
 
         // Add element in key value pair
         // Unique Key is accepted

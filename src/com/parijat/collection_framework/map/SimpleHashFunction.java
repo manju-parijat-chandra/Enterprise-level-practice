@@ -1,5 +1,7 @@
 package com.parijat.collection_framework.map;
 
+// Demo
+
 public class SimpleHashFunction {
     public static void main(String[] args) {
         System.out.println(simpleHash("ok"));
