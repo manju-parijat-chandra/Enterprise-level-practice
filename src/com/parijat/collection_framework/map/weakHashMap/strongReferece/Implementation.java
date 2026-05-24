@@ -15,7 +15,7 @@ public class Implementation {
 
         simulateApplicationRunning();
 
-        System.out.println("Cache after running (Some Entries may be clared): " + imageCache);
+        System.out.println("Cache after running (Some Entries may be cleared): " + imageCache);
     }
 
     public static void simulateApplicationRunning(){
