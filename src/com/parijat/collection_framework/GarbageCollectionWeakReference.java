@@ -17,7 +17,7 @@ public class GarbageCollectionWeakReference {
 
         WeakReference<Person> personWeakReference = new WeakReference<>(new Person("Shyam", 25));
 
-        System.out.println(personWeakReference.get()); // .get to access the Object
+        System.out.println(personWeakReference.get()); // .get to get the Object
 
         // Here personWeakRef is a weak reference to Object created above.
         // Will be Removed from Memory after sometime once Garbage collection is Ran by JVM.
