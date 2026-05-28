@@ -4,7 +4,7 @@ package com.parijat.collection_framework.map.hashTable;
 
 import java.util.Hashtable;
 
-public class ImplementHashTable {
+public class Implement {
 
     public static void main(String[] args) {
 
